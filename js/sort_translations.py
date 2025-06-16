@@ -99,7 +99,7 @@ def write_sorted_file(file_path, original_lines, sorted_pairs):
             if array_started and not array_ended:
                 stripped_line = line.strip()
                 if stripped_line == ']' or stripped_line == '];':
-                    f.write(']\n\n')  # 写入数组结束符号并保留空行
+                    f.write(']\n')  # 写入数组结束符号并保留空行
                     array_ended = True
                 continue
                 
